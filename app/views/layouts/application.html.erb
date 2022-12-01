@@ -14,10 +14,7 @@
     <nav class="navbar is-info" role="navigation" aria-label="main navigation">
       <div class="container">
         <div class="navbar-brand">
-          <%# <a class="navbar-item" href="https://bulma.io">
-            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-          </a> %>
-
+         
           <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -36,21 +33,12 @@
             </a>
 
             <a class="navbar-item">
-              Documentation
+              Analytics & trends
             </a>
-
-            
           </div>
 
           <div class="navbar-end">
-            <div class="navbar-item">
-              <input class="input is-rounded" type="text" placeholder="Search">
-              <div class="buttons">
-                <a class="button is-primary is-rounded">
-                  <strong>Submit</strong>
-                </a>
-              </div>
-            </div>
+            <%= render 'searches/form', locals: { myclass: 'navbar-item' }  %>
           </div>
         </div>
       </div>
