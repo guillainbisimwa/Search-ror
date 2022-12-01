@@ -1,0 +1,19 @@
+<div class="m-3">
+  <div class="content is-large is-flex is-flex-direction-column	is-align-items-center">
+    <div class="title center has-text-info"><%= pluralize(@articles.count, "Result") %></div>
+  </div>
+     <% @articles.each do |article| %>
+        <div class="card my-5 ">
+            <div class="card-content">
+                <div class="content">
+                    <p>
+                        <strong>  <%= article.title %> </strong>
+                        <br>
+                        <%= article.body %>
+                    </p>
+                </div>
+            </div>
+        </div>
+       
+      <% end %>
+</div>
