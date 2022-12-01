@@ -8,6 +8,9 @@ gem 'rails', '~> 6.1.7'
 # Use Postgres as the database for Active Record
 gem 'pg'
 
+# Use ransack, an Object-based searching built in ruby
+gem 'ransack'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
