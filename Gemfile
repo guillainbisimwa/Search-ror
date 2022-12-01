@@ -11,6 +11,12 @@ gem 'pg'
 # Use ransack, an Object-based searching built in ruby
 gem 'ransack'
 
+# Use turbo-rails Hotwire's SPA-like page accelerator
+gem 'turbo-rails'
+
+# Use Hotwire modest javaScript framework
+gem 'stimulus-rails'
+
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
