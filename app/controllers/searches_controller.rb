@@ -1,10 +1,12 @@
 class SearchesController < ApplicationController
   def index
-    key = params[:q]
-    @query = Article.ransack(key)
-    #@articles = @query.result.includes(:title).page(params[:page])
+    if params[:q].present?
+      @query = Article.ransack(params[:q])
+      @articles = @query.result(distinct: true)
+    end
 
-    @articles = @query.result(distinct: true)
   end
+
+  
 
 end
