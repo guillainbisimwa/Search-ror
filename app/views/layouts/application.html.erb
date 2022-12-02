@@ -27,14 +27,8 @@
            <a class="navbar-item">
               <h1 class="title is-2 has-text-white">Search-ROR</h1>
             </a>
-
-            <a class="navbar-item">
-              Home
-            </a>
-
-            <a class="navbar-item">
-              Analytics & trends
-            </a>
+              <%= link_to 'Home', root_path, class: 'navbar-item' %>
+              <%= link_to 'Analytics & trends', articles_statistics_path, class: 'navbar-item' %>
           </div>
 
           <div class="navbar-end">

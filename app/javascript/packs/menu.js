@@ -24,9 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
     input.addEventListener('keyup', logKey);
 
     function logKey(e) {
+      console.log("o");
       setTimeout(() => {
         myForm.submit();
-      }, 1000)
+      }, 2500)
     }
   
   });
