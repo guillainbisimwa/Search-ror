@@ -3,6 +3,6 @@ class ArticlesController < ApplicationController
   end
 
   def statistics
-    
+    @searches = Search.all
   end
 end

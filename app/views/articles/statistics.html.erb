@@ -8,47 +8,22 @@
        The Analytics that display what users were searching for. 
   </div>
 </div>
- <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
     <thead>
-        <tr>
-            <th>
-                Number
-            </th>
-            <th>
-                Most serach key word
-            </th>
-            <th>
-                Occurences
-            </th>
-        </tr>
+      <tr>
+        <th class="">Count</th>
+        <th class="">Most serach key word</th>
+        <th class="">Occurences</th>
+      </tr>
     </thead>
-
     <tbody>
+      <% @searches.each do |search| %>
         <tr>
-            <td>1</td>
-            <td>Zapporeja</td>
-            <td>20</td>
+          <td><%= search.article_count %></td>
+          <td><%= search.keyword %></td>
+          <td><%= search.occurence %></td>
         </tr>
-         <tr>
-            <td>1</td>
-            <td>Zapporeja</td>
-            <td>20</td>
-        </tr>
-         <tr>
-            <td>1</td>
-            <td>Zapporeja</td>
-            <td>20</td>
-        </tr>
-         <tr>
-            <td>1</td>
-            <td>Zapporeja</td>
-            <td>20</td>
-        </tr>
-         <tr>
-            <td>1</td>
-            <td>Zapporeja</td>
-            <td>20</td>
-        </tr>
+      <% end %>
     </tbody>
-
-</table>
+  </table>
