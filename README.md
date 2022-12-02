@@ -1,9 +1,3 @@
----
-noteId: "5e4f9900724811eda0a987a3d237d518"
-tags: []
-
----
-
 <p align="center">
     <h1 align="center"> Helpjuice Ruby on Rails Test project </h1>
 </p>
