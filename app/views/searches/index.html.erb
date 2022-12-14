@@ -1,0 +1,9 @@
+<div class="m-3">
+  <div class="content is-large is-flex is-flex-direction-column	is-align-items-center">
+    <div class="title center has-text-info"><%= pluralize(@articles.count, "Result") %></div>
+  </div>
+
+  <div>
+    <%= render "searches", searches: @articles %>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+:schedule:
+  articles_statistics_job:
+    cron: */10 * * * * * # Runs once per 10 sec "0 * * * * *" 
+    class: SearchWorker
+:concurrency: 5
+production:
+  :concurrency: 5

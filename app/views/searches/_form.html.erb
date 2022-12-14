@@ -1,0 +1,7 @@
+<%= search_form_for(@query, url: searches_path, method: :get, class:'is-flex')  do |f| %>
+  <%= f.search_field :title_cont,
+   placeholder: "Search...",
+   id: "search-form",
+   class: "input is-rounded is-align-self-center" %>
+  <%= f.submit "Submit", class:"button is-primary is-rounded is-align-self-center" %>
+<% end %>

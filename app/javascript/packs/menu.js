@@ -17,5 +17,17 @@ document.addEventListener('DOMContentLoaded', () => {
   
       });
     });
+
+    const input = document.getElementById('search-form');
+    const myForm = document.querySelector("form");
+ 
+    input.addEventListener('keyup', logKey);
+
+    function logKey(e) {
+      console.log("o");
+      setTimeout(() => {
+        myForm.submit();
+      }, 2500)
+    }
   
   });
